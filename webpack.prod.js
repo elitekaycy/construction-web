@@ -18,14 +18,32 @@ module.exports = merge(common, {
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
-        template: "./src/template.html",
+        template: "./src/index.html",
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
           removeComments: true
         }
-      })
-    ]
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'services.html',
+        template: "./src/services.html",
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'gallery.html',
+        template: "./src/gallery.html",
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      }),
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),

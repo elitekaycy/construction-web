@@ -1,0 +1,168 @@
+body{
+ padding: 0;
+ margin: 0;
+ font-family: 'Montserrat', sans-serif;
+ overflow-x: hidden;
+}
+
+
+.infoNav{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.navcolor {
+    background-color: #03203C;
+    color: white
+}
+
+.hero{
+    width: 100vw;
+    height: 85vh;
+    position: relative;
+    background-image: url('./assets/images/imgA.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backdrop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.service-img-border
+{
+    width: 50px;
+    height: 50px;
+   
+}
+
+
+.address
+{
+    list-style: none;
+    line-height: 1.5;
+}
+
+.address li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.description-img{
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+}
+
+.inp:placeholder-shown{
+    background-color: #CAD5E2;
+    color: #ddd
+}
+
+.inp:focus{
+    outline: none;
+}
+
+.footer{
+    width: 100vw;
+    height: auto;
+    min-height: 50vh;
+    background-color: black;
+    font-size: 15px;
+
+}
+
+.footer-backdrop {
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+}
+
+.service{
+    background-image: url('./assets/images/electrician.jpg');
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: -6px 2px 29px -6px rgba(122,135,142,0.5);
+    -webkit-box-shadow: -6px 2px 29px -6px rgba(122,135,142,0.5);
+    -moz-box-shadow: -6px 2px 29px -6px rgba(122,135,142,0.5);
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Contact{
+height: 50vh;
+
+}
+
+.fixedScroll {
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    transition: 2s ease linear;
+    overflow-x: hidden;
+}
+
+.heroservices
+{
+    width: 100vw;
+    height: calc(40vh);
+    position: relative;
+    background-image: url('./assets/images/architect.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.quicklink
+{
+    cursor: pointer;
+    color: white;
+}
+
+.quicklink:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.navigate{
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.navigate:hover{
+    transform: scale(1.005,1.005);
+    text-decoration: none;
+    color: #ddd;
+}
+
+.no-decor
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.no-decor:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ddd;
+}

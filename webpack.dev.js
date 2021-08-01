@@ -11,8 +11,17 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html"
-    })
+      template: "./src/index.html",
+
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'services.html',
+      template: "./src/services.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'gallery.html',
+      template: "./src/gallery.html"
+    }),
   ],
   module: {
     rules: [
@@ -22,6 +31,13 @@ module.exports = merge(common, {
           "style-loader", //3. Inject styles into DOM
           "css-loader", //2. Turns css into commonjs
           "sass-loader" //1. Turns sass into css
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          "style-loader",
+          "css-loader"
         ]
       }
     ]
